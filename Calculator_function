@@ -1,0 +1,66 @@
+#Calculator Assignment : 
+
+def Calculator_function (num1 , num2 , operater):
+      #Python Arithmetic Operators:
+      if operater == '+':
+          return print("Result of Addition = " ,(num1 + num2))
+      elif operater == '-':
+         return print("Result of Subtraction = " ,(num1 - num2))
+      elif operater == '*':
+         return print("Result of Multiplication = " ,(num1 * num2))
+      elif operater == '/':
+         return print("Result of Division = " ,(num1 / num2))
+      elif operater == '//':
+         return print("Result of Floor division = " ,(num1 // num2))
+      elif operater == '%':
+         return print("Result of Modulus = " ,(num1 % num2))
+      elif operater == '**':
+         return print("Result of Exponentiation = " ,(num1 ** num2))
+      
+      #Python Comparison Operators: (True or False )
+      elif operater == '==':
+          return print("Result of Equal Operator = " ,(num1 == num2))
+      elif operater == '!=':
+          return print("Result of Not equal Operator = " ,(num1 != num2))
+      elif operater == '>':
+          return print("Result of Greater than Operator = " ,(num1 > num2))
+      elif operater == '<':
+          return print("Result of Less than Operator = " ,(num1 < num2))
+      elif operater == '>=':
+          return print("Result of Greater than or equal to Operator  = " ,(num1 >= num2))
+      elif operater == '<=':
+          return print("Result of Less than or equal to Operator = " ,(num1 <= num2))
+
+      #Python Identity Operators:Identity operators are used to compare the objects, not if they are equal,
+      # but if they are actually the same object, with the same memory location:(True or False)
+     
+      elif operater == 'is':
+          return print("Result of 'is'  Operator  = " ,(num1 is num2))
+      elif operater == 'is not':
+          return print("Result of 'is not' Operator = " ,(num1 is not num2))
+
+      #Using Max , Min and abs builtin functions:
+
+      elif operater == 'max':
+          return print(" Maximum number is = " ,(max(num1,num2)))
+      elif operater == 'min':
+          return print(" Minimum number is = " ,(min(num1,num2)))
+      elif operater == 'abs':
+          return print(" abs of num1 & num2 is  = " ,abs(num1) ," , ",abs(num2))
+
+      #Odd-even check :
+      elif operater == 'odd':
+          return print("Is num1 odd? : " ,is_odd(num1) ," , Is num2 odd? : ",is_odd(num2))
+
+          
+          
+
+      else: 
+         print("Error")
+      
+def is_odd(n):
+     return (n % 2) == 1
+
+#operater:+  , - ,  * ,  / ,  // ,  %  , ** ,  == , != , > , < , < , >= , <= , is , is not , max , min , abs , odd 
+Calculator_function(10,1,'+')
+     
